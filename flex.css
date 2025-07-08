@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0e1b2c;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  display: flex;
+  width: 95%;
+  max-width: 1200px;
+  background: url('https://i.imgur.com/Z6XbNvT.png'); /* Replace with your background */
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.profile-info h3 {
+  font-size: 1rem;
+}
+
+.date h1 {
+  font-size: 2.2rem;
+  margin-top: 40px;
+}
+
+.date p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.legend {
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.red { background-color: red; }
+.blue { background-color: cyan; }
+.green { background-color: lime; }
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search-bar {
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.category {
+  padding: 8px 16px;
+  background: #eee;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.category.active {
+  background: #ccc;
+}
+
+.add-note {
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.add-note input {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.task-section h3 {
+  background: #ccc;
+  padding: 8px 12px;
+  width: fit-content;
+  border-radius: 10px;
+  color: black;
+}
