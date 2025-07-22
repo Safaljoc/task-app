@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App UI</title>
+  <link rel="stylesheet" href="flex.css">
 </head>
+ <script src="todo.js"></script>
 <body>
-    <h1>My name is Safal</h1>
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="https://via.placeholder.com/60" alt="Profile" class="profile-pic">
+        <div class="profile-info">
+          <h3>Safal Joshi</h3>
+          <p>safaljoshi.2017@gmail.com</p>
+        </div>
+      </div>
+      <div class="date">
+        <h1>MONDAY</h1>
+        <p>6th JUNE</p>
+      </div>
+      <div class="legend">
+        <p><span class="dot red"></span> High Priority</p>
+        <p><span class="dot blue"></span> Medium Priority</p>
+        <p><span class="dot green"></span> Low Priority</p>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button class="icon-button">🔍</button>
+      </div>
+
+      <div class="categories">
+        <button class="category active">All</button>
+        <button class="category">Pinned</button>
+        <button class="category">Home 🏠</button>
+        <button class="category">Work 🗓️</button>
+        <button class="category">Study 📖</button>
+      </div>
+
+      <div class="add-note">
+        <input type="text" placeholder="Add note...">
+        <button class="icon-button">➕</button>
+      </div>
+
+      <div class="task-section">
+        <h3>Tasks:</h3>
+        <!-- Task items will go here -->
+      </div>
+    </main>
+  </div>
+   
 </body>
 </html>
